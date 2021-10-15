@@ -25,7 +25,7 @@ requirements:
     - six >=1.6.1
 
   run:
-    - python
+    - python >=3.6
     - six >=1.6.1
 
 test:
@@ -35,6 +35,11 @@ test:
     - leather.series
     - leather.shapes
     - leather.ticks
+  requires:
+    - pip
+    - python <3.10
+  commands:
+    - pip check
 
 about:
   home: https://leather.rtfd.io
